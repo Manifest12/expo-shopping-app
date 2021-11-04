@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import login from './screens/login';
 import homepage from './screens/homepage';
+import cart from './screens/cart';
 
 const MasterNavigator = createNativeStackNavigator()
 
@@ -20,6 +21,9 @@ export default function App() {
           name ='home'
           component = {homepage}
         />
+        <MasterNavigator.Screen 
+          name ='cart'
+          component={cart}/>
       </MasterNavigator.Navigator>
     </NavigationContainer>
 
